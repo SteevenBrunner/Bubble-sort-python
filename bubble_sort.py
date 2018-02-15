@@ -22,20 +22,17 @@ def bubble_sort(input_list):
     return input_list
 
 
-# To test the algorithm
-# print(unsorted_list)
-# print(bubble_sort(unsorted_list))
-
 # copy by value
 unsorted_list_cpy = unsorted_list[:]
 
 start = time()
 bubble_sort(unsorted_list_cpy)
-print("bubble sort algorithm ends in " + str(time() - start) + " seconds to sort a list of " + str(max_range - 1) + " items.")
+print("bubble sort algorithm ends in " + str(time() - start) + " seconds to sort a list of " + str(max_range - 1)
+      + " items.")
 
 unsorted_list_cpy = unsorted_list[:]
 
 start = time()
 unsorted_list_cpy.sort()
-print("system python sort() Timsort algorithm ends in " + str(time() - start) + " seconds to sort a list of " +
-      str(max_range - 1) + " items.")
+print("system python sort() Timsort algorithm ends in " + str(time() - start) + " seconds to sort a list of "
+      + str(max_range - 1) + " items.")
