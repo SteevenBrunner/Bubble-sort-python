@@ -1,6 +1,7 @@
 # Bubble-sort-python
 
 A python3 implementation of the bubble sort algorithm
+
 Containing some code to compare it to the sort() python function (which implements the Timsort algorithm)
 
 Some informations about the bubble sort algorithm :
