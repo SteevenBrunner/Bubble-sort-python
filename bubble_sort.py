@@ -5,8 +5,9 @@
 ###################################################
 
 import random
+from time import time
 
-max_range = 10000
+max_range = 10001
 unsorted_list = random.sample(range(1, max_range), max_range - 1)
 
 
@@ -22,4 +23,19 @@ def bubble_sort(input_list):
 
 
 # To test the algorithm
-print(bubble_sort(unsorted_list))
+# print(unsorted_list)
+# print(bubble_sort(unsorted_list))
+
+# copy by value
+unsorted_list_cpy = unsorted_list[:]
+
+start = time()
+bubble_sort(unsorted_list_cpy)
+print("bubble sort algorithm ends in " + str(time() - start) + " seconds to sort a list of " + str(max_range - 1) + " items.")
+
+unsorted_list_cpy = unsorted_list[:]
+
+start = time()
+unsorted_list_cpy.sort()
+print("system python sort() Timsort algorithm ends in " + str(time() - start) + " seconds to sort a list of " +
+      str(max_range - 1) + " items.")
