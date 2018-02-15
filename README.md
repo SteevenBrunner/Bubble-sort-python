@@ -1,8 +1,9 @@
 # Bubble-sort-python
 
-A python3 implementation of the bubble sort algorithm, with a test part to compare the time to sort(): Timsort algorithm
+A python3 implementation of the bubble sort algorithm
+Containing some code to compare it to the sort() python function (which implements the Timsort algorithm)
 
-Some informations about this sorting algorithm :
+Some informations about the bubble sort algorithm :
 
 ```
 Worst-case performance	    :   O(n²)
